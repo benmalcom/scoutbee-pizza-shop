@@ -1,17 +1,27 @@
 {
   "extends": [
+    "react-app",
     "plugin:react/recommended",
     "plugin:import/warnings",
     "prettier",
     "prettier/react"
   ],
-  "plugins": ["react", "import", "prettier"],
+  "plugins": [
+    "react",
+    "import",
+    "prettier"
+  ],
   "rules": {
     "react/display-name": 0,
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".js", ".jsx"]
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
       }
     ],
     "react/no-unescaped-entities": 0,
@@ -21,6 +31,16 @@
     "react/prop-types": 0,
     "no-underscore-dangle": 0
   },
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts?(x)"
+      ],
+      "rules": {
+        "additional-typescript-only-rule": 0
+      }
+    }
+  ],
   "globals": {
     "window": true,
     "document": true,
@@ -29,7 +49,8 @@
     "FileReader": true,
     "Blob": true,
     "navigator": true,
-    "console": true
+    "console": true,
+    "history": true
   },
   "parser": "babel-eslint"
 }

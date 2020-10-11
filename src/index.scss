@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.react-select__indicator-separator {
+  display: none;
+}
+
+.react-select__value-container {
+  min-height: 30px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.react-select__multi-value {
+  height: 24px;
+  border-radius: 17px;
+  background-color: #ffffff;
+  border: solid 1px #eff2f6;
+
+  .react-select__multi-value__label {
+    color: #333333;
+  }
+
+  .react-select__multi-value__remove {
+    cursor: pointer;
+    color: #88a6b7;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.react-select__dropdown-indicator {
+  color: #88a6b7;
+  cursor: pointer;
+}
+
+.react-select__clear-indicator {
+  cursor: pointer;
+}
+
+.react-select__menu {
+  z-index: 9999;
+}
+
+.react-select__control {
+  height: 100%;
+  font-size: 14px;
+  border: solid 1px #dfe8ef !important;
+  background: #f6f8fb;
+  border-radius: 0 !important;
+  min-height: 40px;
+}
+
+.react-select__single-value {
+  color: #94a1b8;
+}
+
+.react-select__input input[type='text'] {
+  border-radius: unset;
+  height: 100%;
+  font-size: inherit !important;
 }
