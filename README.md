@@ -1,3 +1,6 @@
+[![CircleCI](https://circleci.com/gh/benmalcom/scoutbee-pizza-shop.svg?style=shield)](https://circleci.com/pipelines/github/benmalcom/scoutbee-pizza-shop)
+
+
 ## Getting Started
 
 In the project directory, you can run:
